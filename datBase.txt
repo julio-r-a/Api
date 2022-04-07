@@ -1,0 +1,13 @@
+create database ProyectoSatira;
+use ProyectoSatira;
+
+
+create table Producto(
+    Codigo INT PRIMARY KEY IDENTITY(1, 1),
+    Nombre VARCHAR (25),
+    Descripcion VARCHAR (50),
+    Marca VARCHAR (30)
+);
+GO
+
+SELECT * FROM Producto;
