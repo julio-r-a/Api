@@ -43,3 +43,17 @@ CREATE PROCEDURE SpEliminarProducto
 AS
 DELETE FROM Producto WHERE Codigo=@Codigo
 GO
+
+
+CREATE PROCEDURE Sp_BuscarId
+
+@Codigo INT
+AS
+BEGIN
+    SELECT *
+    FROM Producto
+    WHERE Codigo = @Codigo
+
+END
+GO
+
